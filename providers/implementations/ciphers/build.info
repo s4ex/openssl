@@ -128,7 +128,8 @@ ENDIF
 
 IF[{- !$disabled{camellia} -}]
   SOURCE[$CAMELLIA_GOAL]=\
-      cipher_camellia.c cipher_camellia_hw.c
+      cipher_camellia.c cipher_camellia_hw.c \
+      cipher_camellia_wrp.c
 ENDIF
 
 IF[{- !$disabled{bf} -}]
